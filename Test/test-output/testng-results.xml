@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-03T20:24:02 IST" name="Suite" finished-at="2022-06-03T20:24:54 IST" duration-ms="52079">
+    <groups>
+    </groups>
+    <test started-at="2022-06-03T20:24:02 IST" name="Test" finished-at="2022-06-03T20:24:54 IST" duration-ms="52079">
+      <class name="com.kite.qa.TestCases.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.kite.qa.TestCases.LoginPageTest@5ac86ba5]" started-at="2022-06-03T20:24:19 IST" name="setup" finished-at="2022-06-03T20:24:21 IST" duration-ms="2175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:1, instance:com.kite.qa.TestCases.LoginPageTest@5ac86ba5]" started-at="2022-06-03T20:24:21 IST" name="loginTest" finished-at="2022-06-03T20:24:29 IST" duration-ms="8230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.kite.qa.TestCases.LoginPageTest@5ac86ba5]" started-at="2022-06-03T20:24:29 IST" name="teardown" finished-at="2022-06-03T20:24:32 IST" duration-ms="3344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.kite.qa.TestCases.LoginPageTest@5ac86ba5]" started-at="2022-06-03T20:24:32 IST" name="setup" finished-at="2022-06-03T20:24:35 IST" duration-ms="2194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginPageTitleTest()[pri:2, instance:com.kite.qa.TestCases.LoginPageTest@5ac86ba5]" started-at="2022-06-03T20:24:35 IST" name="LoginPageTitleTest" finished-at="2022-06-03T20:24:37 IST" duration-ms="2019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageTitleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.kite.qa.TestCases.LoginPageTest@5ac86ba5]" started-at="2022-06-03T20:24:37 IST" name="teardown" finished-at="2022-06-03T20:24:40 IST" duration-ms="3277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.kite.qa.TestCases.LoginPageTest@5ac86ba5]" started-at="2022-06-03T20:24:40 IST" name="setup" finished-at="2022-06-03T20:24:42 IST" duration-ms="2189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="KiteUserID()[pri:3, instance:com.kite.qa.TestCases.LoginPageTest@5ac86ba5]" started-at="2022-06-03T20:24:42 IST" name="KiteUserID" finished-at="2022-06-03T20:24:51 IST" duration-ms="9168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KiteUserID -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.kite.qa.TestCases.LoginPageTest@5ac86ba5]" started-at="2022-06-03T20:24:51 IST" name="teardown" finished-at="2022-06-03T20:24:54 IST" duration-ms="3292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.kite.qa.TestCases.LoginPageTest -->
+      <class name="com.kite.qa.TestCases.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.kite.qa.TestCases.HomePageTest@4fad94a7]" started-at="2022-06-03T20:24:02 IST" name="setup" finished-at="2022-06-03T20:24:14 IST" duration-ms="11828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginPageTitleTest()[pri:0, instance:com.kite.qa.TestCases.HomePageTest@4fad94a7]" started-at="2022-06-03T20:24:14 IST" name="LoginPageTitleTest" finished-at="2022-06-03T20:24:16 IST" duration-ms="2014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageTitleTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.kite.qa.TestCases.HomePageTest@4fad94a7]" started-at="2022-06-03T20:24:16 IST" name="TearDown" finished-at="2022-06-03T20:24:19 IST" duration-ms="2312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.kite.qa.TestCases.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

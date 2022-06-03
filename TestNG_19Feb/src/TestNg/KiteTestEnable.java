@@ -24,7 +24,7 @@ public class KiteTestEnable {
 			driver.get("https://kite.zerodha.com/");
 	}
 	//2
-	@Test
+	@Test(enabled=false)
 	public void KiteLoginpageTitle() {
 		String Title =driver.getTitle();
 		System.out.println(Title);

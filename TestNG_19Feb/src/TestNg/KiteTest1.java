@@ -14,7 +14,8 @@ public class KiteTest1 {
 	
 	WebDriver driver;
 	//1  4 7
-	@SuppressWarnings("deprecation")	
+	
+	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public void setup() {
 		 System.setProperty("webdriver.chrome.driver", "C:\\Installer\\chromedriver.exe");
@@ -24,7 +25,7 @@ public class KiteTest1 {
 			driver.get("https://kite.zerodha.com/");
 	}
 	//2
-	@Test
+	@Test(invocationCount = 10)
 	public void KiteLoginpageTitle() {
 		String Title =driver.getTitle();
 		System.out.println(Title);
