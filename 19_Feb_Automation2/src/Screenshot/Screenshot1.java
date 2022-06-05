@@ -30,8 +30,7 @@ public class Screenshot1 {
 		File destination = new File("C:\\Users\\RKENDRE\\Desktop\\Screenshot\\Sasmp.png");
 		
 		FileHandler.copy(source, destination);
-		
-		
+				
 	}
 
 }

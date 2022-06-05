@@ -51,12 +51,12 @@
         <ul class="nav-right">
           <li class="m-r-10">
             <a href="#">
-              <span class="badge badge-primary">Web Automation Results</span>
+              <span class="badge badge-primary">Kite application Report</span>
             </a>
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Jun 3, 2022 08:24:02 pm</span>
+                    <span class="badge badge-primary">Jun 5, 2022 02:18:20 pm</span>
                 </a>
             </li>
         </ul>
@@ -72,7 +72,15 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -101,7 +109,7 @@
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-						
+						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
 						
@@ -114,28 +122,28 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="pass" test-id="1"
+				<li class="test-item"  status="fail" test-id="1"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">LoginPageTitleTest</p>
-							<p class="duration text-sm">0h 0m 2s+11ms</p>
-							<span class="datetime">20:24:14 pm</span>
+							<p class="duration text-sm">0h 0m 2s+15ms</p>
+							<span class="datetime">14:18:32 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">LoginPageTitleTest</h5>
-									<span class='badge badge-success'>06.03.2022 20:24:14</span>
-									<span class='badge badge-danger'>06.03.2022 20:24:16</span>
-									<span class='badge badge-default'>0h 0m 2s+11ms</span>
+									<h5 class="test-status text-fail">LoginPageTitleTest</h5>
+									<span class='badge badge-success'>06.05.2022 14:18:32</span>
+									<span class='badge badge-danger'>06.05.2022 14:18:34</span>
+									<span class='badge badge-default'>0h 0m 2s+15ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -151,14 +159,49 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>8:24:16 pm</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:18:34 pm</td>
 				<td>
-						Test Passed
+						<textarea disabled class="code-block">junit.framework.ComparisonFailure: expected:<...a...> but was:<......>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.kite.qa.TestCases.HomePageTest.LoginPageTitleTest(HomePageTest.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
 				</td>
 			</tr>
 	</tbody>
 </table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\RKENDRE\git\repository2\Test\reports\LoginPageTitleTest.png' src='C:\Users\RKENDRE\git\repository2\Test\reports\LoginPageTitleTest.png'>
+	</ul>
 </div>
 					</div>
 				</li>
@@ -172,8 +215,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">loginTest</p>
-							<p class="duration text-sm">0h 0m 8s+230ms</p>
-							<span class="datetime">20:24:21 pm</span>
+							<p class="duration text-sm">0h 0m 8s+219ms</p>
+							<span class="datetime">14:18:39 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -181,9 +224,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">loginTest</h5>
-									<span class='badge badge-success'>06.03.2022 20:24:21</span>
-									<span class='badge badge-danger'>06.03.2022 20:24:29</span>
-									<span class='badge badge-default'>0h 0m 8s+230ms</span>
+									<span class='badge badge-success'>06.05.2022 14:18:39</span>
+									<span class='badge badge-danger'>06.05.2022 14:18:47</span>
+									<span class='badge badge-default'>0h 0m 8s+219ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -200,7 +243,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>8:24:29 pm</td>
+				<td>2:18:47 pm</td>
 				<td>
 						Test Passed
 				</td>
@@ -210,28 +253,28 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="3"
+				<li class="test-item"  status="fail" test-id="3"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">LoginPageTitleTest</p>
-							<p class="duration text-sm">0h 0m 2s+21ms</p>
-							<span class="datetime">20:24:35 pm</span>
+							<p class="name">HomePageTitleTest</p>
+							<p class="duration text-sm">0h 0m 2s+10ms</p>
+							<span class="datetime">14:18:53 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">LoginPageTitleTest</h5>
-									<span class='badge badge-success'>06.03.2022 20:24:35</span>
-									<span class='badge badge-danger'>06.03.2022 20:24:37</span>
-									<span class='badge badge-default'>0h 0m 2s+21ms</span>
+									<h5 class="test-status text-fail">HomePageTitleTest</h5>
+									<span class='badge badge-success'>06.05.2022 14:18:53</span>
+									<span class='badge badge-danger'>06.05.2022 14:18:55</span>
+									<span class='badge badge-default'>0h 0m 2s+10ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -247,14 +290,49 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>8:24:37 pm</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:18:55 pm</td>
 				<td>
-						Test Passed
+						<textarea disabled class="code-block">junit.framework.ComparisonFailure: expected:<K...> but was:<...>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.kite.qa.TestCases.LoginPageTest.HomePageTitleTest(LoginPageTest.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
 				</td>
 			</tr>
 	</tbody>
 </table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\RKENDRE\git\repository2\Test\reports\HomePageTitleTest.png' src='C:\Users\RKENDRE\git\repository2\Test\reports\HomePageTitleTest.png'>
+	</ul>
 </div>
 					</div>
 				</li>
@@ -268,8 +346,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">KiteUserID</p>
-							<p class="duration text-sm">0h 0m 9s+168ms</p>
-							<span class="datetime">20:24:42 pm</span>
+							<p class="duration text-sm">0h 0m 9s+252ms</p>
+							<span class="datetime">14:19:00 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -277,9 +355,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">KiteUserID</h5>
-									<span class='badge badge-success'>06.03.2022 20:24:42</span>
-									<span class='badge badge-danger'>06.03.2022 20:24:51</span>
-									<span class='badge badge-default'>0h 0m 9s+168ms</span>
+									<span class='badge badge-success'>06.05.2022 14:19:00</span>
+									<span class='badge badge-danger'>06.05.2022 14:19:09</span>
+									<span class='badge badge-default'>0h 0m 9s+252ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -296,7 +374,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>8:24:51 pm</td>
+				<td>2:19:09 pm</td>
 				<td>
 						Test Passed
 				</td>
@@ -304,6 +382,89 @@
 	</tbody>
 </table>
 </div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row exception-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Exception</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">1</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">junit.framework.ComparisonFailure</p>
+							<p class="duration text-sm">2 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>junit.framework.ComparisonFailure</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>14:18:32 pm</td>
+									<td class='linked' test-id='1'>
+										LoginPageTitleTest
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>14:18:53 pm</td>
+									<td class='linked' test-id='3'>
+										HomePageTitleTest
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</li>
 			</ul>
@@ -337,12 +498,12 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'>
-						<b>4</b> tests passed
+					<div><small data-tooltip='50%'>
+						<b>2</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> tests failed, 
+						<small data-tooltip='50%'><b>2</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -360,9 +521,9 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'><b>4</b> events passed</small></div>
+					<div><small data-tooltip='50%'><b>2</b> events passed</small></div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> events failed, 
+						<small data-tooltip='50%'><b>2</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -380,7 +541,7 @@
 							<h2 class="font-size-28 font-weight-light mt-3">4</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>100.00%</span>
+							<span>50.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -396,7 +557,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Jun 3, 2022 08:24:02 pm</h4>
+							<h4 class="font-weight-light mt-4">Jun 5, 2022 02:18:20 pm</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -412,7 +573,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 52s+611ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 52s+592ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -454,7 +615,7 @@
 						<tbody>
 							<tr>
 								<td>Tester</td>
-								<td>Ranjeet Kendre</td>
+								<td>Ketan patil</td>
 							</tr>
 						</tbody>
 					</table>
@@ -466,13 +627,13 @@
 <script>
 	var statusGroup = {
 	    parentCount: 4,
-		passParent: 4,
-		failParent: 0,
+		passParent: 2,
+		failParent: 2,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 0,
+		exceptionsParent: 2,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -494,8 +655,8 @@
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
 		eventsCount: 4,
-		passEvents: 4,
-		failEvents: 0,
+		passEvents: 2,
+		failEvents: 2,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -507,7 +668,7 @@
 </script>
 <script>
 	var timeline = {
-	        "LoginPageTitleTest":2.011,"loginTest":8.23,"LoginPageTitleTest":2.021,"KiteUserID":9.168
+	        "LoginPageTitleTest":2.015,"loginTest":8.219,"HomePageTitleTest":2.01,"KiteUserID":9.252
 	};
 </script>
                 </div>

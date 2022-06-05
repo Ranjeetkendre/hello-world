@@ -33,7 +33,7 @@ public class HomePageTest extends TestBase{
 	@Test	
 	 public void LoginPageTitleTest() throws InterruptedException {
 			String Title = loginpage.ValidateLoginPageTitle(props.getProperty("Username"), props.getProperty("Password"), props.getProperty("PIN"));
-			 Assert.assertEquals(Title, "Dashboard / Kite");
+			 Assert.assertEquals(Title, "Dshboard / Kite");
 			 log.info("Login page Title ");
 	}
 	

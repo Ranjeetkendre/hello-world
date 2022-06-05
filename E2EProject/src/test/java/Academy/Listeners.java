@@ -21,10 +21,8 @@ public class Listeners extends base implements ITestListener {
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		test= extent.createTest(result.getMethod().getMethodName());
-		extentTest.set(test);
-		
+		extentTest.set(test);		
 	}
-
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		extentTest.get().log(Status.PASS, "Test Passed");

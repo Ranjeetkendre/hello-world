@@ -28,8 +28,7 @@ public class RedBusDynamicListBox {
 	    	  System.out.println(Cityfrom.get(i).getText());
 	    	  if(Cityfrom.get(i).getText().equals("Warje, Pune")) {
 	    		  Cityfrom.get(i).click();
-	    		  break;
-	    		  
+	    		  break;	    		  
 	    	  }
 	      }		  
 		  System.out.println();

@@ -31,6 +31,7 @@ public class Listeners extends TestBase implements ITestListener {
 		extentTest.get().log(Status.PASS, "Test Passed");
 	}
 	public void onTestFailure(ITestResult result) {
+		
 		//Screenshot
 		extentTest.get().fail(result.getThrowable());
 		WebDriver driver =null;
@@ -39,11 +40,14 @@ public class Listeners extends TestBase implements ITestListener {
 		try {
 			driver =(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 		} catch(Exception e)
-		{			
+		{
+			
 		}
 		try {
-			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName), result.getMethod().getMethodName());			
+			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName), result.getMethod().getMethodName());
+			
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

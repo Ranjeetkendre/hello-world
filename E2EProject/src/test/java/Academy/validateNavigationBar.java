@@ -31,7 +31,7 @@ public void initialize() throws IOException
 	
 	 driver =initializeDriver();
 		
-	driver.get(prop.getProperty("url"));
+	driver.get(prop.getProperty("ur"));
 }
 	
 	@Test
@@ -45,7 +45,7 @@ public void initialize() throws IOException
 	
 		//compare the text from the browser with actual text.- Error..
 	    Assert.assertTrue(l.getNavigationBar().isDisplayed());
-	    log.info("Navigation Bar is displayed");
+	    log.info("Nvigation Bar is displayed");
 		 System.out.println("Test completed");
 	 //   Assert.assertFalse(false);
 		;

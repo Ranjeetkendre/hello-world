@@ -11,13 +11,13 @@ public class ExtentReporterNG {
 		
 		String path =System.getProperty("user.dir")+"\\reports\\index.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-		reporter.config().setReportName("Web Automation Results");
+		reporter.config().setReportName("Kite application Report");
 		reporter.config().setDocumentTitle("Test Results");
 		
 		extent =new ExtentReports();
 		extent.attachReporter(reporter);
-		extent.setSystemInfo("Tester", "Ranjeet Kendre");
+		extent.setSystemInfo("Tester", "Ketan patil");
 		return extent;
-		
+	
 	}
 }

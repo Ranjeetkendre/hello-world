@@ -26,9 +26,9 @@ public class LoginPageTest extends TestBase{
 		
 	}
 		 @Test(priority=2)
-		 public void LoginPageTitleTest() throws InterruptedException {
+		 public void HomePageTitleTest() throws InterruptedException {
 				String Title = loginpage.ValidateLoginPageTitle(props.getProperty("Username"), props.getProperty("Password"), props.getProperty("PIN"));
-				 Assert.assertEquals(Title, "Kite - Zerodha's fast and elegant flagship trading platform");
+				 Assert.assertEquals(Title, "ite - Zerodha's fast and elegant flagship trading platform");
 			}
 		 @Test(priority=3)
 		 public void KiteUserID() throws InterruptedException {

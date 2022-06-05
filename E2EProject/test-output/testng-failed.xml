@@ -10,7 +10,7 @@
         <methods>
           <include name="initialize"/>
           <include name="teardown"/>
-          <include name="basePageNavigation"/>
+          <include name="basePageNavigation" invocation-numbers="0"/>
         </methods>
       </class> <!-- Academy.HomePage -->
     </classes>

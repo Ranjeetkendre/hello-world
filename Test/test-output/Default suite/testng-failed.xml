@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.kite.qa.TestCases.HomePageTest">
+      <class name="com.kite.qa.TestCases.LoginPageTest">
         <methods>
-          <include name="setup"/>
-          <include name="TearDown"/>
           <include name="LoginPageTitleTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.kite.qa.TestCases.HomePageTest -->
+      </class> <!-- com.kite.qa.TestCases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

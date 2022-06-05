@@ -23,9 +23,9 @@ public class Screenshot2 {
 		
 		driver.get("https://www.facebook.com");
 		
-		 //Take screnshot & copy it into object
+		//Take screnshot & copy it into object
 		
-		  File Source=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File Source=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		   
 		  Thread.sleep(2000);
 		  

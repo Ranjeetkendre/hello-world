@@ -60,7 +60,7 @@ public TestBase()  {
 	  driver.get(props.getProperty("url"));
      }
 
-   public String getScreenShotPath(String testCaseName) throws IOException{
+
           
 //      File Source=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 //	  String random=RandomString.make();	  
@@ -69,14 +69,13 @@ public TestBase()  {
 //	  File Destination =new File(".\\Screenshot\\"+filename+""+random+".jpg");
 //	  FileHandler.copy(Source, Destination);
 //	  return filename;
-	  
- 	  File Source=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-      String random=RandomString.make();	  
-      String  filename = "Kite";
-
-      File Destination =new File("C:\\Users\\RKENDRE\\eclipse-workspace\\TesNgTutorial\\Test\\Screenshots"+filename+""+random+".jpg");
-      FileHandler.copy(Source, Destination);
-      return filename;
+	   public String getScreenShotPath(String testCaseName) throws IOException
+	   {
+	   	TakesScreenshot ts=(TakesScreenshot) driver;
+	   	File source =ts.getScreenshotAs(OutputType.FILE);
+	   	String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
+	   	FileUtils.copyFile(source,new File(destinationFile));
+	   	return destinationFile;
 
 }
   

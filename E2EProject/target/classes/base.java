@@ -16,19 +16,19 @@ public class base {
 
 	public  WebDriver driver;
 	public Properties prop;
-public WebDriver initializeDriver() throws IOException
+    public WebDriver initializeDriver() throws IOException
 {
 	
  prop= new Properties();
-FileInputStream fis=new FileInputStream("C:\\Users\\rahul\\E2EProject\\src\\main\\java\\resources\\data.properties");
+ FileInputStream fis=new FileInputStream("C:\\Users\\RKENDRE\\git\\repository2\\E2EProject\\src\\main\\java\\resources\\data.properties");
 
-prop.load(fis);
-String browserName=prop.getProperty("browser");
-System.out.println(browserName);
+ prop.load(fis);
+ String browserName=prop.getProperty("browser");
+ System.out.println(browserName);
 
-if(browserName.equals("chrome"))
-{
-	 System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
+        if(browserName.equals("chrome"))
+  {
+	 System.setProperty("webdriver.chrome.driver", "C:\\Installer\\chromedriver.exe");
 	driver= new ChromeDriver();
 		//execute in chrome driver
 	
@@ -46,19 +46,16 @@ else if (browserName.equals("IE"))
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 return driver;
 
-
 }
 
-
-public String getScreenShotPath(String testCaseName,WebDriver driver) throws IOException
+    public String getScreenShotPath(String testCaseName,WebDriver driver) throws IOException
 {
 	TakesScreenshot ts=(TakesScreenshot) driver;
 	File source =ts.getScreenshotAs(OutputType.FILE);
 	String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
+	
 	FileUtils.copyFile(source,new File(destinationFile));
 	return destinationFile;
 
-
-}
-
+  }
 }

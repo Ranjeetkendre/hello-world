@@ -1,7 +1,7 @@
-19:56:59.532 [main] INFO  Com.Kite.qa.base.TestBase - USernames& Password is Entered
-19:58:46.806 [main] INFO  Com.Kite.qa.base.TestBase - Driver is initialized
-19:58:55.689 [main] INFO  Com.Kite.qa.base.TestBase - USernames& Password is Entered
-20:00:00.233 [main] INFO  Com.Kite.qa.base.TestBase - Driver is initialized
-20:00:09.080 [main] INFO  Com.Kite.qa.base.TestBase - USernames& Password is Entered
-20:04:03.085 [main] INFO  Com.Kite.qa.base.TestBase - Driver is initialized
-20:04:11.964 [main] INFO  Com.Kite.qa.base.TestBase - USernames& Password is Entered
+20:49:40.805 [main] INFO  Com.Kite.qa.base.TestBase - USernames & Password is Entered
+20:49:42.852 [main] INFO  Com.Kite.qa.base.TestBase - Login page Title 
+23:28:24.992 [main] INFO  Com.Kite.qa.base.TestBase - Driver is initialized
+23:28:34.173 [main] INFO  Com.Kite.qa.base.TestBase - USernames & Password is Entered
+23:28:36.208 [main] INFO  Com.Kite.qa.base.TestBase - Login page Title 
+23:29:59.413 [main] INFO  Com.Kite.qa.base.TestBase - Driver is initialized
+23:30:08.599 [main] INFO  Com.Kite.qa.base.TestBase - USernames & Password is Entered
