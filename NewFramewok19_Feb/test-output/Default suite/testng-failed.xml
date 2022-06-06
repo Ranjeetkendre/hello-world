@@ -5,7 +5,9 @@
     <classes>
       <class name="com.kite.qa.TestCases.LoginPageTest">
         <methods>
-          <include name="LoginPageTitleTest"/>
+          <include name="KiteUserID"/>
+          <include name="HomePageTitleTest"/>
+          <include name="loginTest"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
