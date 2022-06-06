@@ -21,21 +21,21 @@ public class HomePageTest extends TestBase{
 	public HomePageTest() {
 		super();
 	}
-	 public static Logger log = LogManager.getLogger(TestBase.class.getName());
+	// public static Logger log = LogManager.getLogger(TestBase.class.getName());
 	@BeforeMethod
 	public void setup() throws InterruptedException {
 		 initialization();
-		 log.info("Driver is initialized");
+	//	 log.info("Driver is initialized");
 		 loginpage=new LoginPage();
 		 homepage=loginpage.validateKiteloginUserID(props.getProperty("Username"), props.getProperty("Password"), props.getProperty("PIN"));
-		 log.info("Usernames & Password is Entered");		 
+	//	 log.info("Usernames & Password is Entered");		 
 	}
 	
 	@Test	
 	 public void LoginPageTitleTest() throws InterruptedException {
 			String Title = loginpage.ValidateLoginPageTitle(props.getProperty("Username"), props.getProperty("Password"), props.getProperty("PIN"));
 			 Assert.assertEquals(Title, "Dshboard / Kite");
-			 log.info("Login page Title ");
+		//	 log.info("Login page Title ");
 	}
 	
     @AfterMethod
